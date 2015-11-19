@@ -1,0 +1,26 @@
+---
+title: "GGally Notes"
+author: "Federico Lopez"
+date: "`r Sys.Date()`"
+output: 
+  pdf_document:
+    toc: yes
+---
+
+# `ggcorr` to plot correlation matrices
+Correlation matrices show correlation coefficients between many continuous variables. These matrices are created using the `cor` function. The `ggcorr` function from the `ggally` package to plot correlation matrices.
+
+```{r, message=FALSE, warning=FALSE}
+#install.packages("GGally")
+library(GGally)
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+
+iris <- tbl_df(iris)
+glimpse(iris)
+
+select(iris, -Species) %>%
+ggcorr()
+
+```
