@@ -26,7 +26,7 @@ From the [`vitae` documentation](https://github.com/mitchelloharawild/vitae):
 ```
 The vitae package currently supports 5 popular CV templates, and adding more is a relatively simple process (details in the creating vitae templates vignette).
 
-Creating a new CV with vitae can be done using the RStudio R Markdown template selector
+Creating a new CV with vitae can be done using the RStudio R Markdown template selector.
 ```
 
 The documentation also includes examples. I followed one of these examples and needed to install additional packages, such as `fontawesome`:
@@ -56,4 +56,4 @@ After installing `vitae` and other packages, knit the file in `RStudio` using th
 
 ## Edit the `awesome-cv` template
 
-The file `"awesome-cv.cls"` contains all the configuration details for fonts, spacing, etc. I changed the  `\fontsize` elements and added `/Library/Fonts/` to `\fontdir`, enabling the use of other installed fonts such as `Open Sans`. I also copied, pasted, and renamed some font files to match the filenames needed for knitting (e.g., I created a copy of `OpenSans-Semibold.ttf`, which I renamed to `OpenSans-Medium.ttf`).
+The file `"awesome-cv.cls"` contains all the configuration details for fonts, spacing, etc. I changed the  `\fontsize` elements and added `/Library/Fonts/` to `\fontdir`, enabling the use of other installed fonts such as `Open Sans`. I also copied, pasted, and renamed some font files to match the filenames needed for knitting (e.g., I created a copy of `OpenSans-Semibold.ttf`, which I renamed to `OpenSans-Medium.ttf`). Search for the `\newfontfamily` element to find the default font type (`Roboto`).
