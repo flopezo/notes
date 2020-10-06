@@ -10,7 +10,7 @@ install.packages('vitae')
 
 `viate` requires `LaTeX` to be installed. 
 
-I had `MacTex` installed (`BasicTeX`) already. However, the `BasicTeX` distribution lacks some of the packages needed to knit to `awesomecv`. I had to install missing packages using the `Tex Live Utility` (found in Applications on macOS).
+I had [`MacTex`](https://tug.org/mactex/morepackages.html) installed (`BasicTeX`) already. However, the `BasicTeX` distribution lacks some of the packages needed to knit to `awesomecv`. I had to install missing packages using the `Tex Live Utility` (found in Applications on macOS).
 
 
 The `tinytex` package makes it easy to setup `LaTeX` within R:
