@@ -56,4 +56,4 @@ After installing `vitae` and other packages, knit the file in `RStudio` using th
 
 ## Edit the `awesome-cv` template
 
-I edited the file `"awesome-cv.cls"` file to change the font sizes; search for the `\fontsize` elements.
+The file `"awesome-cv.cls"` contains all the configuration details for fonts, spacing, etc. I changed the  `\fontsize` elements and added `/Library/Fonts/` to `\fontdir`, enabling the use of other installed fonts such as `Open Sans`. I also copied, pasted, and renamed some font files to match the filenames needed for knitting (e.g., I created a copy of `OpenSans-Semibold.ttf`, which I renamed to `OpenSans-Medium.ttf`).
